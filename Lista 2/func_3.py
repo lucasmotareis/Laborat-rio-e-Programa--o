@@ -1,4 +1,4 @@
-def retonaSinal(num):
+def retornaSinal(num):
     if num % 2 == 0:
         x = 'Par'
     else:
@@ -6,5 +6,5 @@ def retonaSinal(num):
     return x
 
 numero = int(input("Digite um número: "))
-print (f"O valor é {retonaSinal(numero)}")
+print (f"O valor é {retornaSinal(numero)}")
  

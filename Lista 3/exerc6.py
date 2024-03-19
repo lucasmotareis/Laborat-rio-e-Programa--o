@@ -1,3 +1,4 @@
-tipo_animal_usuario = input("Digite se o animal é vertebrado ou invertebrado: ")
-animal_reino = input("Digite se o animal é uma ave ou um mamífero")
+from func6 import *
 
+vertebrado_ou_nao = input("O animal é vertebrado ou invertebrado?: ")
+print(vertebradoOuNao(vertebrado_ou_nao))

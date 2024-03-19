@@ -1,9 +1,14 @@
+import random
+
+def listaAleatoria(numero):
+    new_list = [random.randint(1, numero) for i in range(numero)]
+    new_list.sort()
+    return new_list
+
 def pesquisa_binaria(list, item):
-    # low and high keep track of which part of the list you'll search in.
     low = 0
     high = len(list) - 1
 
-    # While you haven't narrowed it down to one element ...
     while low <= high:
       # ... check the middle element
       mid = (low + high) // 2
@@ -17,17 +22,19 @@ def pesquisa_binaria(list, item):
       # The guess was too low.
       else:
         low = mid + 1
-
-    # Item doesn't exist
     return None
    
-import random
 
 
-def listaAleatoria(numero):
-    new_list = [random.randint(1, numero) for i in range(numero)]
-    new_list.sort()
-    return new_list
+
+
+def pesquisa_lenta(lista_ordernada, valor_a_encontrar):
+  for i in range(len(lista_ordernada)):
+    if valor_a_encontrar == lista_ordernada[i]:
+      return i
+  return None
+
+
 
 
 

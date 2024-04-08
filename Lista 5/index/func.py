@@ -1,6 +1,5 @@
 
 def indexou(lista,valor_ocorrencia_posicao):
-    nova_lista = []
     primeira_ocorrencia_posicao = 'Não existe esse valor na lista'
     lista_reserva = lista[:]
     for i in range(len(lista_reserva)):

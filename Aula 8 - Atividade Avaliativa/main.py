@@ -13,7 +13,7 @@ colaborador_salario = float(input("Digite o salário do colaborador: "))
 while colaborador_salario != 0:
     colaborador_abono = colaborador_salario*0.20
     if colaborador_abono < 100:
-        colaborador_abono = 100 
+        colaborador_abono = 100.0
     lista_colaboradores_completa.append([colaborador_nome,colaborador_salario,colaborador_abono])
     colaborador_nome = input("Digite o nome do colaborador: ")
     colaborador_salario = float(input("Digite o salário do colaborador: "))
@@ -29,15 +29,15 @@ soma_abono = somaAbono(lista_colaboradores_completa )
 qtd_abono_acima_media = colaboradoresAbonoAcimaMedia(lista_colaboradores_completa)
 
 print('''
-Colaborador         Salário           Abono
-===========         =======         =========
+Colaborador\tSalário\t\tAbono
+===========\t===========\t==============
       ''')
 for i in lista_colaboradores_completa:
-    print(f"""{i[0]}            R$  {i[1]:.2f}          R$  {i[2]:.2f}                    """)
+    print(f"{i[0]:10}\tR${i[1]:10}\tR${i[2]:10}")
 
 print(f'''
-===========       ===============             =============       
-   TOTAL          R$ {soma_salario}           R$ {soma_abono}
+===========\t===============\t=============       
+   TOTAL\tR$ {soma_salario}\tR$ {soma_abono}
       
 Foram Processados {colaboradores_processados} colaboradores
 Total gasto com salários e abonos: R$ {valor_total_a_ser_gasto}

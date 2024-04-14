@@ -30,7 +30,7 @@ qtd_abono_acima_media = colaboradoresAbonoAcimaMedia(lista_colaboradores_complet
 
 print('''
 Colaborador\tSalário\t\tAbono
-===========\t===========\t==============
+===========\t===========\t=============
       ''')
 for i in lista_colaboradores_completa:
     print(f"{i[0]:10}\tR${i[1]:10}\tR${i[2]:10}")
